@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="wapper">
+      <div class="heading"><h1>Todo App</h1></div>
+      <div class="input-field">
+        <label for="todo-input">Thêm mục</label>
+        <input type="text" id="todo-input" class="todo-input" placeholder="Nhập mục cần thêm" />
+        <button class="input-button" id="add-button"><i class="bx bx-plus"></i></button>
+      </div>
+      <ul class="todolist" id="todo-list"></ul>
+      <div class="footer">
+        <span class="pendingNum">Bạn có mục chưa hoàn thành</span>
+        <button class="clear-all">Clear All</button>
+      </div>
+    </div>
+    <script src="./js/todolist.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #006778;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: inherit;
+}
+.wapper {
+  margin: 0 auto;
+  max-width: 400px;
+  margin-top: 120px;
+  background-color: #fff;
+  padding: 25px;
+  width: 100%;
+  border-radius: 5px;
+}
+.wapper .todolist {
+  width: 100%;
+}
+.wapper .heading {
+  text-align: center;
+}
+.wapper .input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  width: 100%;
+  margin: 20px 0;
+}
+.input-field input {
+  height: 100%;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid #0093ab;
+  font-size: 17px;
+  padding: 10px;
+}
+.input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 100%;
+  margin-left: 5px;
+  outline: none;
+  border: 1px solid #0093ab;
+  background-color: #0093ab;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.input-field button:hover {
+  transform: scale(1.1);
+}
+.wapper .todolist {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todolist li {
+  padding-left: 10px;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background-color: #ccc;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkboxlist {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.todolist li span {
+  padding: 0 5px;
+  background-color: #00afc1;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.delete-button {
+  height: 100%;
+  padding: 0 15px;
+  background-color: #00afc1;
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.delete-button:hover {
+  transform: scale(1.1);
+}
+.wapper .footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  outline: none;
+  border: 1px solid #0093ab;
+  background-color: #0093ab;
+  border-radius: 3px;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.footer button:hover {
+  transform: scale(1.1);
+}
+
+/* todolist-status */
+.todo-item .content {
+  color: white;
+  text-decoration: none;
+}
+.todo-complete .content {
+  color: red;
+  text-decoration: line-through;
+}
