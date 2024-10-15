@@ -27,6 +27,10 @@ const getUser = (callback) => {
       alert("Không thể lấy dữ liệu người dùng. Vui lòng thử lại sau.");
     });
 };
+document.querySelector(".signup-form").addEventListener("submit", (event) => {
+  event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+  signup();
+});
 
 const createUser = (data) => {
   fetch(apiUser, {
@@ -50,7 +54,6 @@ const createUser = (data) => {
       alert("Đăng ký không thành công. Vui lòng thử lại.");
     });
 };
-
 const signup = () => {
   const username = document.querySelector(".input-signup-username").value;
   const password = document.querySelector(".input-signup-password").value;
@@ -67,11 +70,8 @@ const signup = () => {
   };
   createUser(user);
 };
+
 document.querySelector(".login-form").addEventListener("submit", (event) => {
   event.preventDefault(); // Ngăn chặn hành vi mặc định của form
   getUser(handleLogin);
-});
-document.querySelector(".signup-form").addEventListener("submit", (event) => {
-  event.preventDefault(); // Ngăn chặn hành vi mặc định của form
-  signup();
 });
